@@ -1,0 +1,224 @@
+.cartPage {
+    margin-top: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 2vw; /* Added padding for spacing */
+}
+
+.cartContents {
+    width: 65%;
+    background-color: rgba(241, 247, 245, 0.9); /* Increased opacity for better readability */
+    height: 83vh;
+    border: 1px solid #d8d8df;
+    border-radius: 0.8rem;
+    padding: 4vh 2vw;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cartItem {
+    display: flex;
+    gap: 3vw;
+    padding: 10px; /* Added padding around cart items */
+    background-color: #ffffff; /* Background color for cart items */
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05); /* Soft shadow for cart items */
+}
+
+.cartItem img {
+    width: 25%;
+    height: 25vh;
+    border-radius: 0.6rem;
+    object-fit: cover; /* Ensure image maintains aspect ratio */
+}
+
+.cartItem-data {
+    flex-grow: 1; /* Allows item data to take up remaining space */
+}
+
+.cartItem-data h4 {
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 600;
+    color: #3b5468;
+}
+
+.cartItem-data p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #7b828a;
+}
+
+.cartItem-data span {
+    display: block; /* Ensure spacing in price area */
+}
+
+.cartItem-data span h5 {
+    font-size: 0.9rem;
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.cartItem-data span h5 b {
+    font-weight: 600;
+}
+
+.cartItem-data button {
+    margin-top: 20px;
+    padding: 8px 16px; /* Added padding for button */
+    background-color: #ff8425; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.cartItem-data button:hover {
+    background-color: #ff6500;
+}
+
+.cartItem-inputs {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cartItem-inputs span {
+    font-size: 0.9rem; /* Added text styling */
+    color: #3b5468;
+}
+
+.cartItem-inputs span p {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+}
+
+.cartItem-inputs span p b {
+    font-weight: 600;
+    color: #ff8425; /* Highlighted text */
+}
+
+.cartItem-inputs div {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    gap: 5px;
+}
+
+.cartItem-inputs input {
+    max-width: 40px;
+    padding: 0;
+    padding-left: 10px;
+    font-size: 0.7rem;
+    height: 20px;
+    border: 1px solid #d8d8df;
+    border-radius: 0.2rem;
+}
+
+.cartItem-inputs div button {
+    padding: 4px 8px; /* Added padding for buttons */
+    background-color: #ff8425;
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.cartItem-inputs div button:hover {
+    background-color: #ff6500;
+}
+
+.cartItem-input:last-child input {
+    max-width: 80px;
+    background-color: #f4f3f9c9;
+}
+
+.cartPriceBody {
+    width: 24%;
+    height: fit-content;
+    background-color: rgba(240, 245, 245, 0.9); /* Increased opacity */
+    padding: 3vh 2vw;
+    border: 1px solid #dfdadaeb;
+    border-radius: 0.3rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05); /* Soft shadow */
+}
+
+.cartPriceBody h4 {
+    margin-bottom: 3vh;
+    color: rgb(103, 120, 146);
+    font-weight: 600;
+}
+
+.cartPriceBody span {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(50, 63, 77);
+    margin-bottom: 10px; /* Added spacing between rows */
+}
+
+.cartPriceBody span b {
+    font-weight: 600;
+}
+
+.cartPriceBody span p {
+    margin-bottom: 10px;
+}
+
+.cartPriceBody h5 {
+    font-weight: 400;
+    color: rgb(36, 57, 78);
+}
+
+.cartPriceBody h5 b {
+    font-weight: 600;
+}
+
+.cartPriceBody button {
+    width: 100%;
+    padding: 13px 0;
+    font-weight: 600;
+    background-color: #ff8425;
+    border: none;
+    color: #fff;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cartPriceBody button:hover {
+    background-color: #ff6500;
+}
+
+/* Checkout Address Section */
+.modal-body .checkout-address section {
+    display: flex;
+    gap: 3%;
+}
+
+.span-child-1 {
+    width: 65%;
+    background-color: rgba(240, 245, 245, 0.5); /* Added light background */
+    padding: 2vh 2vw; /* Padding for the content */
+    border-radius: 0.3rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05); /* Soft shadow */
+}
+
+/* Scrollbar Styling */
+.cartContents::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cartContents::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.cartContents::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}

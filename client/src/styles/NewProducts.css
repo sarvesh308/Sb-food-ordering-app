@@ -1,0 +1,150 @@
+.new-product-page {
+    background-color: #30373f;
+    height: 100vh;
+    width: 100%;
+    padding-top: 15vh;
+    padding-bottom: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-product-container {
+    background-color: #181818;
+    padding: 3vh 2vw;
+    width: 60vw; /* Increased width for better content spacing */
+    border-radius: 0.6rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Added shadow for elevation effect */
+}
+
+.new-product-container h3 {
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 3vh;
+    font-size: 1.8rem; /* Increased font size for better readability */
+    font-weight: 600;
+}
+
+.new-product-container button {
+    width: 50%;
+    margin-left: 25%;
+    background-color: #ff8425; /* Added a highlight button color */
+    color: aliceblue;
+    border: none;
+    padding: 10px 0;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.new-product-container button:hover {
+    background-color: #ff6500; /* Hover effect for the button */
+}
+
+.new-product-body {
+    height: 60vh;
+    overflow-y: scroll;
+    padding: 2vh 1.5vw;
+    margin-bottom: 2vh;
+    border: 1px solid #67646489;
+    border-radius: 0.4rem;
+}
+
+.new-product-body span {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vh; /* Added spacing between rows */
+}
+
+.new-product-body span .span-21 input {
+    width: 20vw;
+    padding: 10px; /* Added padding for better input appearance */
+    border-radius: 0.3rem;
+}
+
+.new-product-body span .span-22 input {
+    width: 25vw;
+    padding: 10px;
+    border-radius: 0.3rem;
+}
+
+.new-product-body span .span-3 input,
+.new-product-body span .span-3 select {
+    width: 14.7vw;
+    padding: 10px;
+    border-radius: 0.3rem;
+}
+
+.new-product-body input {
+    background-color: #30373f25;
+    border-color: #67646489;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 0.3rem; /* Added border-radius for smoother edges */
+    transition: border-color 0.3s ease;
+}
+
+.new-product-body input:focus {
+    outline: none;
+    background-color: #30373f50;
+    border-color: #ff8425; /* Highlight border on focus */
+    color: aliceblue;
+}
+
+.new-product-body label {
+    color: rgba(240, 248, 255, 0.84);
+    font-size: 1rem; /* Slightly increased label font size */
+}
+
+.new-product-body span select {
+    background-color: #30373f25;
+    border-color: #67646489;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 0.3rem;
+    transition: border-color 0.3s ease;
+}
+
+.new-product-body span select:focus {
+    border-color: #ff8425; /* Highlight border on select focus */
+}
+
+.new-product-body span option {
+    color: rgb(6, 21, 33);
+}
+
+.new-product-body section {
+    margin: 3vh 0;
+}
+
+.new-product-body section h4 {
+    color: aliceblue;
+    font-size: 1.3rem; /* Increased section title size */
+    font-weight: 500;
+    margin-bottom: 1vh;
+}
+
+.new-product-body section span {
+    display: flex;
+    justify-content: flex-start; /* Changed 'start' to 'flex-start' for compatibility */
+    gap: 30px;
+}
+
+.new-product-body section span label {
+    color: rgba(240, 248, 255, 0.658);
+    font-size: 0.9rem; /* Adjusted font size for small labels */
+}
+
+/* Scrollbar Styling */
+.new-product-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.new-product-body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.new-product-body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
