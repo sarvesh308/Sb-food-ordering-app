@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
 const PORT = 6001;
-
+//connect with mongodb account 
 mongoose.connect('mongodb+srv://sarveshtraveller:sarvesh123@sbfoods.axox6.mongodb.net/?retryWrites=true&w=majority&appName=Sbfoods', {
     useNewUrlParser: true,
     useUnifiedTopology: true
